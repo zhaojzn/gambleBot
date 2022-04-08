@@ -53,7 +53,7 @@ client.on('message', async msg => {
             let values = await checkRegistered.checkRegistered(discordID, discordUsername);
             await beg(msg, values.balance, values.dig, values.inGame);
         } else if (msg.content.toLowerCase() === '-help') {
-            let url = "https://github.com/KianSalehi/gambler-bot";
+            let url = "https://github.com/zhaojzn/gambleBot";
             let replyEmblem = new Discord.MessageEmbed()
                 .setColor("LUMINOUS_VIVID_PINK")
                 .setTitle("Help")

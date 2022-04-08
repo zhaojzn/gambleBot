@@ -85,7 +85,7 @@ async function crash(msg, amount, balance, dig, inGame, client) {
                             .setTitle("Crash")
                             .setDescription(`<@${discordID}> you have won $${newProfit}`)
                             .addFields(
-                                {inline: true, name: 'Multiplier ', value: `${multiplier}x`},
+                                {inline: true, name: 'Multiplier ', value: `${multiplier}x - ${stop}x`},
                                 {inline: true, name: "Profit: ", value: `$${newProfit}`}
                             )
                             .addField("Balance", `$${balance + newProfit}`);
